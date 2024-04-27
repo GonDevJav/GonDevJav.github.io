@@ -1,0 +1,567 @@
+@prefix : <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#> .
+
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7> rdf:type owl:Ontology ;
+                                                                        rdfs:comment "Ontology about flight satisfaction surveys. By Gonzalo Gutiérrez Chozas" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ainf.aau.at/ontodebug#axiom
+<http://ainf.aau.at/ontodebug#axiom> rdf:type owl:AnnotationProperty ;
+                                     rdfs:subPropertyOf <http://ainf.aau.at/ontodebug#testCase> .
+
+
+###  http://ainf.aau.at/ontodebug#testCase
+<http://ainf.aau.at/ontodebug#testCase> rdf:type owl:AnnotationProperty .
+
+
+###  http://ainf.aau.at/ontodebug#type
+<http://ainf.aau.at/ontodebug#type> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://ainf.aau.at/ontodebug#testCase> .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference
+:hasAirportReference rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Airline ;
+                     rdfs:range :Airport ;
+                     rdfs:comment "Company reference airport" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Review ;
+           rdfs:range :Person ;
+           rdfs:comment "Author of the review" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction
+:hasConecction rdf:type owl:ObjectProperty ;
+               rdfs:domain :Trip ;
+               rdfs:range :Location ;
+               rdfs:comment "This property relates an object of class Trip to an object of class Location" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip
+:hasMadeTheTrip rdf:type owl:ObjectProperty ;
+                rdfs:domain :Trip ;
+                rdfs:range :Passenger ;
+                rdfs:comment "The passenger has made the trip" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName
+:airportName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Airport ;
+             rdfs:range xsd:string ;
+             rdfs:comment "airport name" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType
+:classType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Seat_Type ,
+                       [ rdf:type owl:Class ;
+                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                         owl:onProperty :classType ;
+                                         owl:hasValue "Businees"
+                                       ]
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :classType ;
+                                         owl:hasValue "Economy"
+                                       ]
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :classType ;
+                                         owl:hasValue "Executive"
+                                       ]
+                                     )
+                       ] ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Class in which you travel" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Person ;
+        rdfs:range xsd:int ;
+        rdfs:comment "Indicates the age" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId
+:hasAircraftId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :AircraftType ;
+               rdfs:range xsd:string ;
+               rdfs:comment "aircraft identification" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService
+:hasCabinStaffService rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Airline ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:comment "Indicates if there is cabin service" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity
+:hasCity rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Location ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Indicates the city" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport
+:hasCodeAirport rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Airport ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A unique identifier for the airport." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin
+:hasCountryOrigin rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Airline ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Date_Flown ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "Indicates the date" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages
+:hasFoodandBeverages rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Airline ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:comment "Indicate if you have food and drink service" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear
+:hasFoundedYear rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Airline ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService
+:hasGroundService rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Airline ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Indicates if the airline has ground service (At the airport)" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment
+:hasInflightEntertainment rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Aircraft ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:comment "indicates if there is in-flight entertainment" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Indicates the name" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort
+:hasSeatComfort rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Aircraft ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Indicates if the plane has comfortable seats" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText
+:hasText rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Review ;
+         rdfs:range xsd:string ;
+         rdfs:comment "review text" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle
+:hasTittle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Review ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Title of the review" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney
+:hasValueforMoney rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Airline ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Indicates if money has been received for the review" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi
+:hasWifi rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Aircraft ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Indicates if there is wifi on board" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed
+:maxSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Aircraft ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "maximum speed" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight_Details ;
+          owl:disjointWith :Seat_Type ;
+          rdfs:comment "The model of the aircraft used in the flight." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType
+:AircraftType rdf:type owl:Class ;
+              rdfs:subClassOf :Aircraft ;
+              rdfs:comment "airplane models" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:subClassOf :Airline_Survey ;
+         rdfs:comment "This class represents a specific airline company. In this case, the ontology includes two airlines: Ryanair and Qatar Airways."@en .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey
+:Airline_Survey rdf:type owl:Class ;
+                rdfs:comment "This class is the root of the ontology and represents the general concept of an airline satisfaction survey."@en .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport
+:Airport rdf:type owl:Class ;
+         rdfs:subClassOf :Location ;
+         rdfs:comment "This class represents an airport." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Review ;
+        rdfs:comment "Author of the review" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Passenger ;
+         owl:disjointWith :Type_of_Traveller ;
+         rdfs:comment "The passenger's country of residence." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown
+:Date_Flown rdf:type owl:Class ;
+            rdfs:subClassOf :Trip ;
+            rdfs:comment "Indicates the date the trip was taken." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation
+:Evaluation rdf:type owl:Class ;
+            rdfs:subClassOf :Review ;
+            rdfs:comment "Review evaluation" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details
+:Flight_Details rdf:type owl:Class ;
+                rdfs:subClassOf :Trip ;
+                rdfs:comment "This class represents specific details of a flight." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination
+:Has_Destination rdf:type owl:Class ;
+                 rdfs:subClassOf :Trip ;
+                 rdfs:comment "Links the trip to the destination airport." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin
+:Has_Origin rdf:type owl:Class ;
+            rdfs:subClassOf :Trip ;
+            rdfs:comment "Links the trip to the origin airport." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating
+:Has_Rating rdf:type owl:Class ;
+            rdfs:subClassOf :Review ;
+            rdfs:comment "The rating given by the passenger to the airline" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Airline_Survey ;
+          rdfs:comment "Location of the airport" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating
+:Max_Rating rdf:type owl:Class ;
+            rdfs:subClassOf :Review ;
+            rdfs:comment "The maximum possible rating for the airline" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf :Person ;
+           rdfs:comment "This class represents the person who took the survey." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Airline_Survey .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Review ;
+             rdfs:comment "Indicates if the passenger would recommend the airline to others." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review
+:Review rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasAuthor ;
+                              owl:allValuesFrom owl:Thing
+                            ] ;
+        rdfs:subClassOf :Airline_Survey ;
+        rdfs:comment "This class represents an individual passenger review of their experience with an airline." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score
+:Score rdf:type owl:Class ;
+       rdfs:subClassOf :Evaluation ;
+       rdfs:comment "The score given to the evaluated aspect." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type
+:Seat_Type rdf:type owl:Class ;
+           rdfs:subClassOf :Flight_Details ;
+           rdfs:comment "The type of seat for the passenger" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip
+:Trip rdf:type owl:Class ;
+      rdfs:subClassOf :Airline_Survey ;
+      rdfs:comment "This class represents an individual trip taken on an airline. Each trip has the following properties:"@en .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified
+:Trip_Verified rdf:type owl:Class ;
+               rdfs:subClassOf :Verification ;
+               rdfs:comment "Indicates if the passenger verified that they took the trip" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller
+:Type_of_Traveller rdf:type owl:Class ;
+                   rdfs:subClassOf :Passenger ;
+                   rdfs:comment "Indicates if the passenger traveled alone, as a couple, with family, etc." .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification
+:Verification rdf:type owl:Class ;
+              rdfs:subClassOf :Airline_Survey ;
+              rdfs:comment "This class represents the verification of the passenger's trip completion." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320
+:a320 rdf:type owl:NamedIndividual ,
+               :AircraftType ;
+      :hasAircraftId "A12456" ;
+      :hasCabinStaffService "true"^^xsd:boolean ;
+      :hasFoodandBeverages "true"^^xsd:boolean ;
+      :hasGroundService "true"^^xsd:boolean ;
+      :hasInflightEntertainment "true"^^xsd:boolean ;
+      :hasWifi "true"^^xsd:boolean ;
+      :maxSpeed 500.3 ;
+      rdfs:sameAs "https://dbpedia.org/page/Airbus_A320neo_family" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330
+:a330 rdf:type owl:NamedIndividual ,
+               :AircraftType ;
+      :hasAircraftId "A7778" ;
+      :hasCabinStaffService "true"^^xsd:boolean ;
+      :hasFoodandBeverages "true"^^xsd:boolean ;
+      :hasGroundService "true"^^xsd:boolean ;
+      :hasInflightEntertainment "true"^^xsd:boolean ;
+      :hasWifi "true"^^xsd:boolean ;
+      :maxSpeed 700.55 ;
+      rdfs:sameAs "https://dbpedia.org/page/Airbus_A330" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380
+:a380 rdf:type owl:NamedIndividual ,
+               :AircraftType ;
+      :hasAircraftId "A4566" ;
+      :hasCabinStaffService "true"^^xsd:boolean ;
+      :hasFoodandBeverages "true"^^xsd:boolean ;
+      :hasGroundService "true"^^xsd:boolean ;
+      :hasInflightEntertainment "false"^^xsd:boolean ;
+      :hasWifi "false"^^xsd:boolean ;
+      :maxSpeed 900 ;
+      rdfs:sameAs "https://dbpedia.org/page/Airbus_A380" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow
+:airportHeathrow rdf:type owl:NamedIndividual ,
+                          :Airport ;
+                 :hasConecction :airportJFK ;
+                 :airportName "Heathrow International Airport" ;
+                 :hasCodeAirport "44HTW" ;
+                 rdfs:sameAs "https://dbpedia.org/page/Heathrow_Airport" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK
+:airportJFK rdf:type owl:NamedIndividual ,
+                     :Airport ;
+            :hasConecction :airportHeathrow ;
+            :airportName "JFK International Airport" ;
+            :hasCodeAirport "64JFK" ;
+            rdfs:sameAs "https://dbpedia.org/page/John_F._Kennedy_International_Airport" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles
+:airportLosAngeles rdf:type owl:NamedIndividual ,
+                            :Airport ;
+                   :hasConecction :airportJFK ;
+                   :airportName "Los Angeles International Airport" ;
+                   :hasCodeAirport "68LA" ;
+                   rdfs:sameAs "https://dbpedia.org/page/Los_Angeles_International_Airport" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737
+:boeing737 rdf:type owl:NamedIndividual ,
+                    :AircraftType ;
+           :hasAircraftId "B1225" ;
+           :hasCabinStaffService "true"^^xsd:boolean ;
+           :hasFoodandBeverages "true"^^xsd:boolean ;
+           :hasGroundService "true"^^xsd:boolean ;
+           :hasInflightEntertainment "true"^^xsd:boolean ;
+           :hasWifi "false"^^xsd:boolean ;
+           :maxSpeed 555 ;
+           rdfs:sameAs "https://dbpedia.org/page/Boeing_737" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200
+:boeing767-200 rdf:type owl:NamedIndividual ,
+                        :AircraftType ;
+               :hasAircraftId "B12345" ;
+               :hasCabinStaffService "true"^^xsd:boolean ;
+               :hasFoodandBeverages "true"^^xsd:boolean ;
+               :hasGroundService "true"^^xsd:boolean ;
+               :hasInflightEntertainment "true"^^xsd:boolean ;
+               :hasWifi "true"^^xsd:boolean ;
+               :maxSpeed 475.3 ;
+               rdfs:sameAs "https://dbpedia.org/page/Boeing_767" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787
+:boeing787 rdf:type owl:NamedIndividual ,
+                    :AircraftType ;
+           :hasAircraftId "B4556" ;
+           :hasCabinStaffService "true"^^xsd:boolean ;
+           :hasFoodandBeverages "true"^^xsd:boolean ;
+           :hasGroundService "false"^^xsd:boolean ;
+           :hasInflightEntertainment "true"^^xsd:boolean ;
+           :hasWifi "false"^^xsd:boolean ;
+           :maxSpeed 789 ;
+           rdfs:sameAs "https://dbpedia.org/page/Boeing_787_Dreamliner" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1
+:passenger1 rdf:type owl:NamedIndividual ,
+                     :Passenger ;
+            :hasMadeTheTrip :trip1 ;
+            :hasAge 28 ;
+            :hasName "Juan" ;
+            rdfs:comment "airplane passenger" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2
+:passenger2 rdf:type owl:NamedIndividual ,
+                     :Passenger ;
+            :hasMadeTheTrip :trip2 ;
+            :hasAge 45 ;
+            :hasName "Pepe" ;
+            rdfs:comment "airplane passenger" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways
+:qatarAirways rdf:type owl:NamedIndividual ,
+                       :Airline ;
+              :hasAirportReference :airportLosAngeles ;
+              :hasCountryOrigin "Catar" ;
+              :hasFoundedYear "1993" ;
+              rdfs:comment "Companny Qatar airways airline" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1
+:review1 rdf:type owl:NamedIndividual ,
+                  :Review ;
+         :hasAuthor :passenger1 ;
+         :hasText "The flight was very bad, I didn't like it at all" ;
+         :hasTittle "disastrous flight" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2
+:review2 rdf:type owl:NamedIndividual ,
+                  :Review ;
+         :hasAuthor :passenger2 ;
+         :hasText "I liked the flight a lot" ;
+         :hasTittle "I liked the flight" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair
+:ryanair rdf:type owl:NamedIndividual ,
+                  :Airline ;
+         :hasAirportReference :airportHeathrow ;
+         :hasCountryOrigin "Irlanda" ;
+         :hasFoundedYear "1994" ;
+         rdfs:comment "Companny Ryanair airline" ;
+         rdfs:sameAs "https://dbpedia.org/page/Ryanair" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1
+:trip1 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       rdfs:sameAs "trip one" .
+
+
+###  http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2
+:trip2 rdf:type owl:NamedIndividual ,
+                :Trip ;
+       rdfs:sameAs "trip two" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Date_Flown
+                :Has_Destination
+                :Has_Origin
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1423 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "comments" : {
+      "undefined" : "Ontology about flight satisfaction surveys. By Gonzalo Gutiérrez Chozas"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight_Details"
+    },
+    "subClasses" : [ "8", "9" ],
+    "comment" : {
+      "undefined" : "This class represents specific details of a flight."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip_Verified"
+    },
+    "comment" : {
+      "undefined" : "Indicates if the passenger verified that they took the trip"
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommended"
+    },
+    "comment" : {
+      "undefined" : "Indicates if the passenger would recommend the airline to others."
+    },
+    "id" : "24",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Has_Origin"
+    },
+    "comment" : {
+      "undefined" : "Links the trip to the origin airport."
+    },
+    "id" : "28",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AircraftType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Airbus_A330",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "a330"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Airbus_A380",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "a380"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Boeing_767",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "boeing767-200"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Boeing_737",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "boeing737"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Boeing_787_Dreamliner",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "boeing787"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Airbus_A320neo_family",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "a320"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "airplane models"
+    },
+    "id" : "35",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "comment" : {
+        "undefined" : "Companny Qatar airways airline"
+      },
+      "labels" : {
+        "IRI-based" : "qatarAirways"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Ryanair",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Companny Ryanair airline"
+      },
+      "labels" : {
+        "IRI-based" : "ryanair"
+      }
+    } ],
+    "comment" : {
+      "en" : "This class represents a specific airline company. In this case, the ontology includes two airlines: Ryanair and Qatar Airways."
+    },
+    "id" : "22",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "comment" : {
+      "undefined" : "The passenger's country of residence."
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Author"
+    },
+    "comment" : {
+      "undefined" : "Author of the review"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "40" ],
+    "id" : "48",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Has_Rating"
+    },
+    "comment" : {
+      "undefined" : "The rating given by the passenger to the airline"
+    },
+    "id" : "50",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft"
+    },
+    "subClasses" : [ "35" ],
+    "comment" : {
+      "undefined" : "The model of the aircraft used in the flight."
+    },
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "undefined" : "Location of the airport"
+    },
+    "id" : "13",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Score"
+    },
+    "comment" : {
+      "undefined" : "The score given to the evaluated aspect."
+    },
+    "id" : "73",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type_of_Traveller"
+    },
+    "comment" : {
+      "undefined" : "Indicates if the passenger traveled alone, as a couple, with family, etc."
+    },
+    "id" : "71",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date_Flown"
+    },
+    "comment" : {
+      "undefined" : "Indicates the date the trip was taken."
+    },
+    "id" : "52",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Max_Rating"
+    },
+    "comment" : {
+      "undefined" : "The maximum possible rating for the airline"
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Los_Angeles_International_Airport",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "airportLosAngeles"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/John_F._Kennedy_International_Airport",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "airportJFK"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Heathrow_Airport",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "airportHeathrow"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "This class represents an airport."
+    },
+    "id" : "4",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "labels" : {
+        "IRI-based" : "review1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "labels" : {
+        "IRI-based" : "review2"
+      }
+    } ],
+    "subClasses" : [ "19", "17", "1", "50", "24" ],
+    "comment" : {
+      "undefined" : "This class represents an individual passenger review of their experience with an airline."
+    },
+    "id" : "2",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat_Type"
+    },
+    "comment" : {
+      "undefined" : "The type of seat for the passenger"
+    },
+    "id" : "9",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Has_Destination"
+    },
+    "comment" : {
+      "undefined" : "Links the trip to the destination airport."
+    },
+    "id" : "75",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verification"
+    },
+    "subClasses" : [ "10" ],
+    "comment" : {
+      "undefined" : "This class represents the verification of the passenger's trip completion."
+    },
+    "id" : "11",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Evaluation"
+    },
+    "subClasses" : [ "73" ],
+    "comment" : {
+      "undefined" : "Review evaluation"
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "comment" : {
+        "undefined" : "airplane passenger"
+      },
+      "labels" : {
+        "IRI-based" : "passenger2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "comment" : {
+        "undefined" : "airplane passenger"
+      },
+      "labels" : {
+        "IRI-based" : "passenger1"
+      }
+    } ],
+    "subClasses" : [ "71", "39" ],
+    "comment" : {
+      "undefined" : "This class represents the person who took the survey."
+    },
+    "id" : "40",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "trip two",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "trip2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1",
+      "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "trip one",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "trip1"
+      }
+    } ],
+    "subClasses" : [ "75", "6", "52", "28" ],
+    "comment" : {
+      "en" : "This class represents an individual trip taken on an airline. Each trip has the following properties:"
+    },
+    "id" : "7",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline_Survey"
+    },
+    "subClasses" : [ "22", "11", "7", "2", "13", "48" ],
+    "comment" : {
+      "en" : "This class is the root of the ontology and represents the general concept of an airline satisfaction survey."
+    },
+    "id" : "36"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasCodeAirport"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A unique identifier for the airport."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasConecction"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "This property relates an object of class Trip to an object of class Location"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasWifi"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indicates if there is wifi on board"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasAirportReference"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Company reference airport"
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "airportName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "airport name"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasCountryOrigin"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "classType"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Class in which you travel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasDate"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "Indicates the date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "range" : "36",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "36",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "8",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "36",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "36",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "36",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasCabinStaffService"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicates if there is cabin service"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasMadeTheTrip"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The passenger has made the trip"
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "range" : "36",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "7",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "7",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasTittle"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Title of the review"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "maxSpeed"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "maximum speed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasAge"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Indicates the age"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "40",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "19",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "7",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "2",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "2",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "48",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasAircraftId"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "aircraft identification"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Indicates the name"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasCity"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Indicates the city"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasAuthor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Author of the review"
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasInflightEntertainment"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "indicates if there is in-flight entertainment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasGroundService"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicates if the airline has ground service (At the airport)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "range" : "75",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "28",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "28",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasFoodandBeverages"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicate if you have food and drink service"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasValueforMoney"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicates if money has been received for the review"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "71",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasSeatComfort"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indicates if the plane has comfortable seats"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasText"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "review text"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear",
+    "baseIri" : "http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasFoundedYear"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  } ]
+}

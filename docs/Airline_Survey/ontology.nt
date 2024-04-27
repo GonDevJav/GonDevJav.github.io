@@ -1,0 +1,528 @@
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about flight satisfaction surveys. By Gonzalo Gutiérrez Chozas" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://ainf.aau.at/ontodebug#axiom
+<http://ainf.aau.at/ontodebug#axiom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ainf.aau.at/ontodebug#axiom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ainf.aau.at/ontodebug#testCase> .
+# 
+# http://ainf.aau.at/ontodebug#testCase
+<http://ainf.aau.at/ontodebug#testCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://ainf.aau.at/ontodebug#type
+<http://ainf.aau.at/ontodebug#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ainf.aau.at/ontodebug#type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ainf.aau.at/ontodebug#testCase> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Company reference airport" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Author of the review" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an object of class Trip to an object of class Location" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger has made the trip" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> <http://www.w3.org/2000/01/rdf-schema#comment> "airport name" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> "Executive" .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#hasValue> "Economy" .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> "Businees" .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#classType> <http://www.w3.org/2000/01/rdf-schema#comment> "Class in which you travel" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the age" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> <http://www.w3.org/2000/01/rdf-schema#comment> "aircraft identification" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if there is cabin service" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the city" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique identifier for the airport." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate if you have food and drink service" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the airline has ground service (At the airport)" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates if there is in-flight entertainment" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the name" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasSeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the plane has comfortable seats" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> <http://www.w3.org/2000/01/rdf-schema#comment> "review text" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the review" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasValueforMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if money has been received for the review" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if there is wifi on board" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "maximum speed" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The model of the aircraft used in the flight." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Aircraft> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> <http://www.w3.org/2000/01/rdf-schema#comment> "airplane models" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a specific airline company. In this case, the ontology includes two airlines: Ryanair and Qatar Airways."@en .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is the root of the ontology and represents the general concept of an airline satisfaction survey."@en .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an airport." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Author> <http://www.w3.org/2000/01/rdf-schema#comment> "Author of the review" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger's country of residence." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date the trip was taken." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Review evaluation" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents specific details of a flight." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Links the trip to the destination airport." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Links the trip to the origin airport." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating given by the passenger to the airline" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of the airport" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Max_Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum possible rating for the airline" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the person who took the survey." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the passenger would recommend the airline to others." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an individual passenger review of their experience with an airline." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Evaluation> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Score> <http://www.w3.org/2000/01/rdf-schema#comment> "The score given to the evaluated aspect." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Flight_Details> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of seat for the passenger" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an individual trip taken on an airline. Each trip has the following properties:"@en .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip_Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the passenger verified that they took the trip" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Type_of_Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the passenger traveled alone, as a couple, with family, etc." .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline_Survey> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Verification> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the verification of the passenger's trip completion." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "A12456" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "500.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a320> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airbus_A320neo_family" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "A7778" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "700.55"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a330> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airbus_A330" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "A4566" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "900"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#a380> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airbus_A380" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> "Heathrow International Airport" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> "44HTW" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Heathrow_Airport" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> "JFK International Airport" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> "64JFK" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/John_F._Kennedy_International_Airport" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airport> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasConecction> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportJFK> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportName> "Los Angeles International Airport" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCodeAirport> "68LA" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Los_Angeles_International_Airport" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "B1225" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "555"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing737> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Boeing_737" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "B12345" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "475.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing767-200> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Boeing_767" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#AircraftType> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAircraftId> "B4556" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCabinStaffService> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoodandBeverages> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasGroundService> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasInflightEntertainment> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasWifi> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#maxSpeed> "789"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#boeing787> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Boeing_787_Dreamliner" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> "28"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> "Juan" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> <http://www.w3.org/2000/01/rdf-schema#comment> "airplane passenger" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Passenger> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasMadeTheTrip> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAge> "45"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasName> "Pepe" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> <http://www.w3.org/2000/01/rdf-schema#comment> "airplane passenger" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportLosAngeles> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin> "Catar" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear> "1993" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#qatarAirways> <http://www.w3.org/2000/01/rdf-schema#comment> "Companny Qatar airways airline" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger1> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> "The flight was very bad, I didn't like it at all" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review1> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> "disastrous flight" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Review> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAuthor> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#passenger2> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasText> "I liked the flight a lot" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#review2> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasTittle> "I liked the flight" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Airline> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasAirportReference> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#airportHeathrow> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasCountryOrigin> "Irlanda" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#hasFoundedYear> "1994" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Companny Ryanair airline" .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#ryanair> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Ryanair" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip1> <http://www.w3.org/2000/01/rdf-schema#sameAs> "trip one" .
+# 
+# http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Trip> .
+<http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#trip2> <http://www.w3.org/2000/01/rdf-schema#sameAs> "trip two" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Origin> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Has_Destination> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/gon/ontologies/2024/3/untitled-ontology-7#Date_Flown> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
